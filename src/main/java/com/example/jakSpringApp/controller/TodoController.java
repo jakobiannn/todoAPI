@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 public class TodoController {
     @Autowired
     private TodoService todoService;
-
     @PostMapping
     public ResponseEntity createTodo(@RequestBody TodoEntity todo,
                                      @RequestParam Long userId) {
